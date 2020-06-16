@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  padding-top: 56px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #fafafa;
+  color: #000;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 728px) {
+  .container {
+    width: 728px;
+  }
+}
+
+.topbar {
+  width: 100%;
+  background-color: white;
+  padding: 8px 16px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  backface-visibility: hidden;
+}
+
+.topbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topbar__logo {
+  height: 40px;
+  display: inline-block;
+}
+
+.topbar__logo img {
+  height: 100%;
+}
+
+.topbar__icon {
+  font-size: 1.6rem;
+}
+
+.user__photo {
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.user__photo__wrapper {
+  border-radius: 100%;
+  border: 2px solid white;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.user__photo img {
+  height: 100%;
+  width: 100%;
+}
+
+.user__photo--newStories {
+  background: linear-gradient(
+    45deg,
+    rgba(245, 160, 77, 1) 0%,
+    rgba(160, 15, 139, 1) 100%
+  );
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.stories {
+  width: 100%;
+  padding: 16px 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.stories__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.stories .user__photo {
+  margin: 0 8px;
+  width: 78px;
+  height: 78px;
+  justify-content: center;
+  align-items: center;
+}
+
+.stories .user__photo__wrapper {
+  height: 72px;
+  width: 72px;
+}
+
+.feed {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+@media screen and (min-width: 728px) {
+  .feed {
+    padding: 16px 0;
+  }
+}
+
+.photo {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.photo__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.photo__header .user {
+  display: flex;
+  align-items: center;
+}
+
+.photo__header .user__photo {
+  height: 40px;
+  margin-right: 8px;
+  width: 40px;
+}
+
+.photo__header .user__name {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.photo__options {
+  font-size: 1.4rem;
+}
+
+.photo__figure {
+  overflow: hidden;
+  margin: 0;
+  height: auto;
+  width: 100%;
+}
+
+.photo__figure img {
+  width: 100%;
+}
+
+.photo__controls {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.photo__control {
+  font-size: 2.4rem;
+  margin: 0 8px;
+}
+
+.photo__control:last-of-type {
+  justify-self: flex-end;
+  margin-left: auto;
+}
+
+.photo__status {
+  display: flex;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.photo__status .user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.photo__status .user span {
+  font-size: 1.2rem;
+}
+
+.photo__status .user__photo {
+  height: 30px;
+  width: 30px;
+  margin-right: 8px;
+}
